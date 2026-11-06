@@ -33,7 +33,7 @@ jobs:
                 run: pytest
 
     push-to-repo:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-26.04
         needs: build-and-test
         # Only run on push event, not pull-requests
         if: github.event_name == 'push'
